@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discount of items</title>
+</head>
+<body>
+        <input type="text" id="qnt">
+        <input type="text" id="rate">
+        <button onclick="calculate()">click</button>
+
+        <script>
+            function calculate(){
+                var dis=0;
+                var qnt=document.getElementById("qnt").value;
+                var rate=document.getElementById("rate").value;
+                // result=qnt*rate;
+                if(qnt>1000){
+                    dis=10;
+                }
+                tot=(qnt*rate)-(qnt*rate*dis/100);
+                console.log("totle expenses :" + tot);
+            }
+        </script>
+</body>
+</html>

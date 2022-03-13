@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divers insurence</title>
+</head>
+<body>
+    <input type="text" id="married" placeholder="Enter M or U">
+    <input type="text" id="gender" placeholder="gender male(M)&female(F)">
+    <input type="text" id="age" placeholder="Enter age">
+   
+
+    <button onclick="insures()"> click</button>
+
+    <script>
+        function insures(){
+            var ms=document.getElementById("married").value;
+            var g= document.getElementById("gender").value;
+            var age=document.getElementById("age").value;
+        
+            if(ms=="M")
+                    {
+                             console.log("Give to company insurence ");
+                     }
+            else{
+                if(g=="M")
+                {
+                    if(age>30)
+                       {      
+                            console.log("Give to company insurence");   
+                       }
+                       else
+                       {   
+                               console.log("Not qulified by insurence");  
+                       }
+                }
+                else
+                {
+                    
+                     if(age>25)
+                    {
+                            console.log("Give to company insurence");
+                    }
+                    
+                    else
+                    {
+                        console.log("Not qulified by insurence");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

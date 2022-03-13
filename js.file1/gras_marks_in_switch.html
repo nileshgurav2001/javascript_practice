@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in switch statement</title>
+</head>
+<body>
+        <input type="text" id="division" placeholder="enter division">
+        <input type="text" id="subject" placeholder="enter subject">
+        <button onclick="findout()">click</button>
+
+        <script>
+            function findout()
+            {
+                var div=Number(document.getElementById("division").value);
+                var sub=Number(document.getElementById("subject").value);
+
+               
+
+             switch(div)
+                {
+                    case 1:
+                             if(sub<=3)
+                                
+                                    console.log("give to 5 gras marks");
+                                
+                                else
+                                
+                                    console.log("Not any gras marks");
+                                
+
+                                    break;
+                    
+                    case 2:
+                                if(sub<=2)
+                            
+                                    console.log("give to 4 gras marks");
+                            
+                                else
+                            
+                                    console.log("Not any gras marks");
+                            
+
+                                    break;
+
+                    case 3:
+                                if(sub<=1)
+                            
+                                    console.log("give to 3 gras marks");
+                            
+                                else
+                            
+                                    console.log("Not any gras marks");
+                            
+
+                                 break;
+
+                    default:
+                        {
+                            console.log("please check class for student")
+                        }
+                }
+            }
+        </script>
+</body>
+</html>

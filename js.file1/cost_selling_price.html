@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cost and selling price</title>
+</head>
+<body>
+    <input type="text" id="cost" placeholder="cost price">
+    <input type="text" id="sell" placeholder="selling price">
+    <button onclick="calculate()">click</button>
+
+    <script>
+        function calculate(){
+            var cost=document.getElementById("cost").value;
+            var sell=document.getElementById("sell").value;
+            // var profit,loss;
+             var profit =sell-cost;
+             var loss = cost-sell; 
+           
+            if(profit>0){
+                console.log("the profit is : " + profit);
+            }
+            else{
+                console.log("the loss is : " + loss);
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>

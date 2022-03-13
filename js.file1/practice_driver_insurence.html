@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divers insurence</title>
+</head>
+<body>
+   
+    <input type="radio" name="married-stetus" id="married">Married
+    <input type="radio" name="married-stetus" id="Unmarried">Unmarried<br><br>
+  
+   
+        <input type="radio" id="male" name="gender">male
+        <input type="radio" id="female" name="gender">female<br><br>
+
+
+    
+    <input type="text" id="age" placeholder="Enter age">
+   
+
+    <button onclick="insures()"> click</button>
+
+    <script>
+        function insures()
+        {
+
+             // ____________________variable name start____________________
+
+            var ms,g,age;
+            age=document.getElementById("age").value;
+
+            if(document.getElementById("married").checked==true)
+                    {
+                         ms="married";
+                    }
+                else{
+                    ms="unmarried";
+                }
+
+                if(document.getElementById("male").checked==true)
+                    {
+                        g="male";
+                    }
+                    else{
+                        g="female";
+                    
+                    }
+                  
+                    // ____________________login psge start____________________
+
+
+                     if(ms=="married")
+                     {
+                         console.log("insurence is successfully");
+                     }
+                     else
+                     {
+                         if(g=="male" && age>30)
+                         {
+                             console.log("insurence is successfully");
+                         }
+                         else if(g=="female" && age>25)
+                         {
+                             console.log("insurence is successfully");
+                         }
+                         else
+                         {
+                             console.log("insurence is NOT successfully");
+                             
+                         }
+                     }
+                   
+                    
+
+
+           }
+                    
+           
+        
+    </script>
+</body>
+</html>

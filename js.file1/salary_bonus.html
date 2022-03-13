@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salary bonus</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>salary bonus</title>
+    </head>
+    <body>
+            <input type="text" id="year1" placeholder="Enter the Joyning Year">
+            <button onclick="bonusia()">click</button>
+
+            <script>
+                function bonusia(){
+                    var py=document.getElementById("year1").value;
+
+                    var ty=2022-py;
+                    if(ty>=3){
+                        bonus=2500;
+                        console.log("Give to the bonus is : " + bonus);
+                    }
+                    else{
+                        console.log("Not any bonus")
+                    }
+
+                }
+            </script>
+    </body>
+    </html>
+</body>
+</html>

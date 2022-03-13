@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <input type="text" id="angle1" placeholder="ang1">
+        <!-- <input type="text" id="angle2" placeholder="ang1">
+        <input type="text" id="angle3" placeholder="ang1"> -->
+        <button onclick="findout()">click</button>
+
+        <script>
+            function findout()
+            {
+                var ang1=document.getElementById("angle1").value;
+
+                if(ang1>=0)
+                {
+                    
+                    console.log("absolute value is : " +ang1);
+                }
+                else
+                {
+                    ab=ang1*(-1);
+                    console.log("absolute value is : " + ab);
+                }
+                // var ang2=document.getElementById("angle2").value;
+                // var ang3=document.getElementById("angle3").value;
+
+                // var deg=Number(ang1)+Number(ang2)+Number(ang3);
+
+                // if(deg=="180")
+                // {
+                //     console.log("three angle is equal to 180 degree");
+                // }
+                // else
+                // {
+                //     console.log("not equal to 180 degree");
+                // }
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <input type="text" id="ram" placeholder="ram">
+    <input type="text" id="shyam" placeholder="shyam">
+    <input type="text" id="ajay" placeholder="ajay">
+    <button onclick="findout()">click</button>
+    <script>
+        function findout(){
+        var ram=document.getElementById("ram").value;
+        var shyam=document.getElementById("shyam").value;
+        var ajay=document.getElementById("ajay").value;
+
+        if(ram>shyam && ram>ajay)
+        {
+            console.log("ram is youngest");
+        }
+        else if(shyam>ram && shyam>ajay)
+        {
+            console.log("shyam is youngest");
+        }
+        else
+        {
+            console.log("ajay is yougest");
+        }
+    
+    }
+    </script> -->
+</body>
+</html>

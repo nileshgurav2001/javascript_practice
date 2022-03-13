@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grace marks</title>
+</head>
+<body>
+    <input type="text" id="class1" placeholder="difine class">
+    <input type="text" id="faile" placeholder="faile subject">
+    <button onclick="findout()">click</button>
+
+    <script>
+       
+        function findout(){
+         var cl=document.getElementById("class1").value;
+        var sub=document.getElementById("faile").value;
+        
+            
+
+
+            if(cl=="1st")
+            {
+                if(sub>3)
+                 {
+                    
+                    console.log("does not get any grace mark");  
+                }
+                else
+                {
+                    console.log("gres is of 5 marks per subject");
+                }
+            }
+            else if(cl=="2nd")
+            {
+                if(sub>2)
+                {
+                   
+                    console.log("does not get any grace");
+                }
+                else
+                {
+                   
+                    console.log("gres is of 4 marks per subject");
+                }
+            }
+            else
+            {
+                if(sub>1)
+                {
+                  
+                    console.log("does not get any grace");
+                }
+                else
+                {
+                   
+                    console.log("gres is of 5 marks per subject");
+                }
+            }
+
+
+             
+
+                    
+            
+        }
+    </script>
+    
+</body>
+</html>

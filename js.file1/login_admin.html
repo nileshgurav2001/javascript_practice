@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login admin page</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <input type="text" id="password">
+    <button onclick="login()">click</button>
+    <script>
+        function login(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            if(username=="nilesh" && password=="Pass@123")
+            {
+                alert("successfully login");
+            }
+            else{
+                alert("Please inter your valid detail");
+            }
+        }
+    </script>
+</body>
+</html>

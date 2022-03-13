@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first day of year</title>
+</head>
+<body>
+        <input type="text" id="year">
+        <button onclick="findout()">click</button>
+
+        <script>
+            function findout()
+            {
+                var new_yr=document.getElementById("year").value;
+                var bs_yr=2001;
+
+                var tot_yr=new_yr-bs_yr;
+                // console.log(tot_yr);
+
+               var lp_yr=parseInt(tot_yr/4);
+                // console.log(lp_yr);
+
+               var add_yr=tot_yr+lp_yr;
+                // console.log(add_yr);
+
+                //---------------------- conver in to week----------------------
+
+                var con_week=add_yr%7;
+                // console.log(con_week);
+
+                if(con_week==0)
+                {
+                    console.log("monday");
+                }
+                else if( con_week==1)
+                {
+                    console.log("tuesday");
+                }
+                else if( con_week==2)
+                {
+                    console.log("wednesday");
+                }
+                else if( con_week==3)
+                {
+                    console.log("thursday");
+                }
+                else if( con_week==4)
+                {
+                    console.log("friday");
+                }
+                else if( con_week==5)
+                {
+                    console.log("saturday");
+                }
+                else
+                {
+                    console.log("sunday")
+                }
+                
+
+            }
+        </script>
+</body>
+</html>

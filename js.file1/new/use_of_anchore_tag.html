@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a{
+            border: ;
+        } */
+    </style>
+</head>
+<body>
+     <a href="http://www.google.com" target="_blank" >google</a><br><br>
+     <a href="http://www.bing.com" target="_blank">bing</a><br><br>
+     <a href="http://www.duckduckgo.com" target="_blank" >duckduckgo</a><br><br>
+     <a href="http://www.yahoo.com" target="_blank">yahoo</a><br><br>
+     <a href="http://www.firefox.com" target="_blank" >firefox</a><br><br>
+     <a href="http://www.startpage.com" target="_blank">startpage</a><br><br>
+     <a href="http://www.Ecocia.com" target="_blank" >ecocia</a><br><br>
+     <a href="http://www.dogpile.com" target="_blank">dogpile</a><br><br>
+     <a href="http://www.aol.com" target="_blank" >aol</a><br><br>
+     <a href="http://www.lycos.com" target="_blank">lycos</a><br><br>
+
+     <button onclick="search()">search</button>
+     <button onclick="window.close()">print</button>
+
+     <script>
+         function search(){
+             let a=document.getElementsByTagName("a");
+             console.log(a.length);
+             for(i=0;i<a.length;i++)
+             {
+                 console.log(a[i].href + "-" + a[i].innerText);
+             }
+         }
+     </script>
+</body>
+</html>

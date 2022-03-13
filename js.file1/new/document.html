@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .male{
+            color:green;
+        }
+        .female{
+            color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="male">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores eveniet blanditiis dicta nostrum suscipit iste deleniti labore esse assumenda?</p>
+    <p class="female">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sunt velit quas iure! Saepe ab vel obcaecati eligendi porro sunt?</p>
+    <p class="male">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate aspernatur distinctio ipsa dicta expedita non minus doloribus, reprehenderit minima alias.</p>
+
+    <button onclick="find()">click</button>
+    <button onclick="findmale()">males</button>
+    <button onclick="findfemale()">females</button><br><br>
+
+    <input type="radio" name="gender" id="male" >male
+    <input type="radio" name="gender" id="female">female
+    <input type="radio" name="gender" id="other">Other
+    <button onclick="findout()">find</button>
+
+    <script>
+        function find()
+        {
+            let p=document.getElementsByName("p");
+            // console.log(p.length);
+           for (let i=0;i<p.length;i++)
+           {
+               console.log(p[i].innerText);
+           }
+        }
+        function findout()
+        {
+            var p=document.getElementsByName("gender");
+            console.log(p.length)
+        }
+        // function findmale()
+        // {
+        //     let p=document.getElementsByClassName("male");
+        //     for (let i=0;i<p.length;i++)
+        //    {
+        //        console.log(p[i].innerText);
+        //    }
+
+        // }
+        // function findfemale()
+        // {
+        //      let p=document.getElementsByClassName("female");
+
+        //      for (let i=0;i<p.length;i++)
+        //    {
+        //        console.log(p[i].innerText);
+        //    }
+        // }
+
+    </script>
+</body>
+</html>

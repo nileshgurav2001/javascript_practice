@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mark percentage</title>
+</head>
+<body>
+        <input type="text" id="marathi" placeholder=" Marathi">
+        <input type="text" id="Hindi"  placeholder=" Hindi">
+        <input type="text" id="English"  placeholder=" English">
+        <input type="text" id="Maths"  placeholder=" Maths">
+        <input type="text" id="Science"  placeholder=" Science">
+        <button onclick="calculate()">click</button>
+
+        <script>
+            function calculate(){
+                var num1=document.getElementById("marathi").value; 
+                var num2=document.getElementById("Hindi").value;
+                var num3=document.getElementById("English").value;
+                var num4=document.getElementById("Maths").value;
+                var num5=document.getElementById("Science").value;
+                result=(Number(num1)+Number(num2)+Number(num3)+Number(num4)+Number(num5))/5;
+                if(result>=90){
+                    console.log("Exelent!");
+                }
+                else if(result>=80 && result<89){
+                    console.log("Very Nice");
+                }
+                else if(result>=60 && result<79){
+                    console.log("Nice");
+                }
+                else if(result>=40 && result<=59){
+                    console.log("Good");
+                }
+                else{
+                    console.log("oops! Better Luck Next Time");
+                }
+                
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Number</title>
+</head>
+<body>
+    <input type="text" id="find1">
+    <button onclick="calculate()">click</button>
+
+    <script>
+        function calculate(){
+            var num1=document.getElementById("find1").value;
+            result1=num1%2;
+            if(result1==0){
+                console.log("Number is Even");
+            }
+            else
+            {
+                console.log("Number is odd")
+            }
+        }
+    </script>
+</body>
+</html>

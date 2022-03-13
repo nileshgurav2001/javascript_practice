@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute value</title>
+</head>
+<body>
+        <input type="text" id="number">
+        <button onclick="findout()">click</button>
+
+        <script>
+            function findout()
+            {
+                var num=document.getElementById("number").value;
+
+                
+                if(num>0)
+                {
+                    console.log("this is  absolute value : " + num);
+                }
+                else
+                {
+                    var av=num*(-1);
+                    console.log("this is absolute value : " + av);
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        Name : <input type="text" id="name"><br><br>
+        <label id="tname" style="font-size: small;color: red;"></label><br><br>
+        email : <input type="email" id="email"><br><br>
+        <label id="temail" style="font-size: small;color: red;"></label><br><br>
+        mobile : <input type="number" id="number"><br><br>
+        <label id="tnumber" style="font-size: small;color: red;"></label><br><br>
+
+        <button onclick="sbumit()">sbumit</button>
+
+        <script>
+            function sbumit(){
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let number = document.getElementById("number").value;
+
+            document.getElementById("tname").innerHTML="";
+            document.getElementById("temail").innerHTML="";
+            document.getElementById("tnumber").innerHTML="";
+            document
+
+            if(name==""){
+                document.getElementById("tname").innerHTML="🤦‍♂️👏✌🙌😜✨ please Enter your Name"
+                document.getElementById("name").focus();
+                return ;
+            }
+
+            
+            if(email==""){
+                document.getElementById("temail").innerHTML="🤦‍♂️👏✌🙌😜✨ please Enter your Email😊😊"
+                document.getElementById("email").focus();
+                return ;
+            }
+
+            
+            if(number==""){
+                document.getElementById("tnumber").innerHTML=" Enter your Mobile Number"
+                document.getElementById("number").focus();
+                return ;
+            }
+
+            
+        }
+        </script>
+        
+</body>
+</html>
